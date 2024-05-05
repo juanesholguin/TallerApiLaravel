@@ -1,0 +1,255 @@
+{
+	"info": {
+		"_postman_id": "fd1f5c59-7fd7-404a-aa84-792df94748f5",
+		"name": "Laravel api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12442825"
+	},
+	"item": [
+		{
+			"name": "Music",
+			"item": [
+				{
+					"name": "Get all musics",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"uuid": "27a146c3-1a5f-4eac-9ad5-ef04a6dece7d"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer 2|JSsuMeCIVl1M3OaPGZim8Q0R46VKwoJt5ur8eaP721894fb7",
+								"uuid": "7baea613-ef03-46f7-b0fe-347d07fa721a"
+							}
+						],
+						"url": {
+							"raw": "http://localhost/api/musics",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"api",
+								"musics"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get specific music",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer 2|JSsuMeCIVl1M3OaPGZim8Q0R46VKwoJt5ur8eaP721894fb7",
+								"uuid": "dff38754-e7f6-49fd-bf80-c0e1cfb0a7cf"
+							}
+						],
+						"url": {
+							"raw": "http://localhost/api/musics/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"api",
+								"musics",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Save music",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer 2|JSsuMeCIVl1M3OaPGZim8Q0R46VKwoJt5ur8eaP721894fb7",
+								"uuid": "4ec18c6e-bffe-4f47-998b-90f2ddf06ccc"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"uuid": "6044fb89-cdd6-486d-9ee6-e0662aa16d81"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"New music\",\r\n    \"artist\": \"New Artist\",\r\n    \"release_year\": 1997,\r\n    \"duration\": \"8.50\",\r\n    \"lyrics\": \"Sample lyrics\",\r\n    \"genre\": \"classical\",\r\n    \"is_explicit\": false,\r\n    \"release_date\": \"2023-01-01\",\r\n    \"popularity\": 6.7,\r\n    \"description\": \"Sample description\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/api/musics",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"api",
+								"musics"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update music",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer 2|JSsuMeCIVl1M3OaPGZim8Q0R46VKwoJt5ur8eaP721894fb7",
+								"uuid": "4c9a47a2-1c1a-4d33-b03f-0d2d925bc412"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"uuid": "60814a42-79d3-4a13-8999-c727a2d27c63"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Test name music\",\r\n    \"artist\": \"Aniyah Casper DDS\",\r\n    \"release_year\": 1996,\r\n    \"duration\": \"5.50\",\r\n    \"lyrics\": \"Et autem dicta exercitationem ab dolores a. Impedit est qui consequatur. Est totam qui adipisci. Reprehenderit placeat qui delectus eius ducimus soluta.\",\r\n    \"genre\": \"classical\",\r\n    \"is_explicit\": 0,\r\n    \"release_date\": \"1994-09-16\",\r\n    \"popularity\": 6.7,\r\n    \"description\": \"Eum eligendi qui nisi quia sapiente. Ad aliquid alias blanditiis excepturi amet. Voluptas sapiente aliquam et cum alias aliquam.\\n\\nOmnis tempore non quo rerum. Est tempore quis incidunt ut et eligendi. Voluptatem qui eos quis fugit.\\n\\nNostrum accusamus excepturi asperiores eaque. Officia dolores similique facilis iure impedit et minima cum. Voluptas enim dolorem et consequatur fugit.\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/api/musics/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"api",
+								"musics",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete music",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer 2|JSsuMeCIVl1M3OaPGZim8Q0R46VKwoJt5ur8eaP721894fb7",
+								"uuid": "3877f750-9b4c-492f-849b-98c889e59583"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"uuid": "1369edb0-f5e7-46f8-98bd-2dee685dd0e9"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/api/musics/11",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"api",
+								"musics",
+								"11"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Login",
+			"item": [
+				{
+					"name": "Login",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"uuid": "bcab8b13-3fce-478e-ba12-dccb42fcd80a"
+							},
+							{
+								"key": "",
+								"value": "",
+								"uuid": "ac7895f6-bc9b-4ced-abaf-454874eabd3d",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"nova86@example.org\",\r\n    \"password\": \"password\",\r\n    \"name\": \"Rowena Beier Sr.\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/api/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"api",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
