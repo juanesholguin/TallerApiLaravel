@@ -17,12 +17,12 @@
 							{
 								"key": "Accept",
 								"value": "application/json",
-								"uuid": "27a146c3-1a5f-4eac-9ad5-ef04a6dece7d"
+								"uuid": "c224ecb3-c26d-4b16-b478-abada6adbc66"
 							},
 							{
 								"key": "Authorization",
-								"value": "Bearer 2|JSsuMeCIVl1M3OaPGZim8Q0R46VKwoJt5ur8eaP721894fb7",
-								"uuid": "7baea613-ef03-46f7-b0fe-347d07fa721a"
+								"value": "Bearer 1|e4tt8gRyk9cc7SK6sLYM9jrZiP1gdnp6YSNixfYS154681cb",
+								"uuid": "db763569-11cb-4901-8111-050ebdd4b48f"
 							}
 						],
 						"url": {
@@ -47,7 +47,7 @@
 							{
 								"key": "Authorization",
 								"value": "Bearer 2|JSsuMeCIVl1M3OaPGZim8Q0R46VKwoJt5ur8eaP721894fb7",
-								"uuid": "dff38754-e7f6-49fd-bf80-c0e1cfb0a7cf"
+								"uuid": "9a3c15ee-6a4b-4826-a9fa-00e289c8665a"
 							}
 						],
 						"url": {
@@ -78,12 +78,12 @@
 							{
 								"key": "Authorization",
 								"value": "Bearer 2|JSsuMeCIVl1M3OaPGZim8Q0R46VKwoJt5ur8eaP721894fb7",
-								"uuid": "4ec18c6e-bffe-4f47-998b-90f2ddf06ccc"
+								"uuid": "e3ad5a7d-1c61-4f58-b1c1-263764b87ea3"
 							},
 							{
 								"key": "Accept",
 								"value": "application/json",
-								"uuid": "6044fb89-cdd6-486d-9ee6-e0662aa16d81"
+								"uuid": "bb1b131d-62a2-4c78-a1aa-7fdb531b5ba9"
 							}
 						],
 						"body": {
@@ -122,12 +122,12 @@
 							{
 								"key": "Authorization",
 								"value": "Bearer 2|JSsuMeCIVl1M3OaPGZim8Q0R46VKwoJt5ur8eaP721894fb7",
-								"uuid": "4c9a47a2-1c1a-4d33-b03f-0d2d925bc412"
+								"uuid": "29ffeec0-c03f-4b6c-a008-8cc468c9326d"
 							},
 							{
 								"key": "Accept",
 								"value": "application/json",
-								"uuid": "60814a42-79d3-4a13-8999-c727a2d27c63"
+								"uuid": "2f28243c-14b3-4498-8c68-dfb3543c1773"
 							}
 						],
 						"body": {
@@ -167,12 +167,12 @@
 							{
 								"key": "Authorization",
 								"value": "Bearer 2|JSsuMeCIVl1M3OaPGZim8Q0R46VKwoJt5ur8eaP721894fb7",
-								"uuid": "3877f750-9b4c-492f-849b-98c889e59583"
+								"uuid": "28f95cc5-83bb-4dc6-82de-c71606fafba2"
 							},
 							{
 								"key": "Accept",
 								"value": "application/json",
-								"uuid": "1369edb0-f5e7-46f8-98bd-2dee685dd0e9"
+								"uuid": "bab75168-7ba9-4415-8a14-6e081d2eeea2"
 							}
 						],
 						"body": {
@@ -202,6 +202,201 @@
 			]
 		},
 		{
+			"name": "Category",
+			"item": [
+				{
+					"name": "Get all category",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"uuid": "8bb27ded-2db1-4c5d-a6a1-f4fce67644a6"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer 1|e4tt8gRyk9cc7SK6sLYM9jrZiP1gdnp6YSNixfYS154681cb",
+								"uuid": "ab3e3aa3-3095-4a9c-937a-bcf55fc03207"
+							}
+						],
+						"url": {
+							"raw": "http://localhost/api/categories",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"api",
+								"categories"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get specific categories",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer 1|e4tt8gRyk9cc7SK6sLYM9jrZiP1gdnp6YSNixfYS154681cb",
+								"uuid": "ffb60c07-6f91-4faa-8472-75a45031ba50"
+							}
+						],
+						"url": {
+							"raw": "http://localhost/api/categories/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"api",
+								"categories",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Save category",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer 1|e4tt8gRyk9cc7SK6sLYM9jrZiP1gdnp6YSNixfYS154681cb",
+								"uuid": "e9a49b13-0184-4d40-8781-1057860d4b7a"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"uuid": "1c138895-50d9-4066-bc02-497f64029bc2"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Test Category\",\r\n    \"priority\": 80,\r\n    \"description\": \"Taller api laravel\",\r\n    \"is_active\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/api/categories",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"api",
+								"categories"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update categories",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer 1|e4tt8gRyk9cc7SK6sLYM9jrZiP1gdnp6YSNixfYS154681cb",
+								"uuid": "582a3e61-371c-4232-987a-dd188e70c402"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"uuid": "2516d864-7e8e-46d3-be36-628f4d155ed6"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Test Category 2\",\r\n    \"priority\": 80,\r\n    \"description\": \"Taller api laravel\",\r\n    \"is_active\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/api/categories/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"api",
+								"categories",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete music",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer 1|e4tt8gRyk9cc7SK6sLYM9jrZiP1gdnp6YSNixfYS154681cb",
+								"uuid": "745c8bc9-d80f-4276-9fe4-28a4169cfed0"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"uuid": "bae957ca-1630-468b-beea-0aaee1b59bbd"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/api/categories/11",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"api",
+								"categories",
+								"11"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
 			"name": "Login",
 			"item": [
 				{
@@ -217,18 +412,18 @@
 							{
 								"key": "Accept",
 								"value": "application/json",
-								"uuid": "bcab8b13-3fce-478e-ba12-dccb42fcd80a"
+								"uuid": "32422431-a861-47d5-a082-6e11042b58f9"
 							},
 							{
 								"key": "",
 								"value": "",
-								"uuid": "ac7895f6-bc9b-4ced-abaf-454874eabd3d",
+								"uuid": "7f72436c-e12a-4f96-a7af-c52178fd94b9",
 								"disabled": true
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"email\": \"nova86@example.org\",\r\n    \"password\": \"password\",\r\n    \"name\": \"Rowena Beier Sr.\"\r\n}",
+							"raw": "{\r\n    \"email\": \"mkoepp@example.com\",\r\n    \"password\": \"password\",\r\n    \"name\": \"Elroy Harber V\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
