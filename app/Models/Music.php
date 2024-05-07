@@ -20,5 +20,11 @@ class Music extends Model
         'release_date',
         'popularity',
         'description',
+        'category_id',
     ];
+
+    public function category()
+    {
+        return $this->belongsTo(Category::class, 'category_id');
+    }
 }

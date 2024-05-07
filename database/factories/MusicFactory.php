@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+use App\Models\Category;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -27,6 +28,7 @@ class MusicFactory extends Factory
             'release_date' => $this->faker->date(),
             'popularity' => $this->faker->randomFloat(1, 0, 10),
             'description' => $this->faker->paragraphs(3, true),
+            'category_id' => Category::inRandomOrder()->first()->id
         ];
     }
 }

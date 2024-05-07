@@ -32,6 +32,7 @@ class StoreMusicRequest extends FormRequest
             'release_date' => 'required|date',
             'popularity' => 'required|numeric|min:0|max:10',
             'description' => 'required|string',
+            'category_id' => 'required|exists:categories,id',
         ];
     }
 }

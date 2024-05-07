@@ -14,7 +14,7 @@ class MusicController extends Controller
      */
     public function index()
     {
-        return Music::all();
+        return Music::with('category')->get();
     }
 
     /**
@@ -31,7 +31,7 @@ class MusicController extends Controller
      */
     public function show(Music $music)
     {
-        return response()->json($music);
+        return response()->json($music->load('category'));
     }
 
     /**
@@ -39,8 +39,8 @@ class MusicController extends Controller
      */
     public function update(UpdateMusicRequest $request, Music $music)
     {
-        $music->update($request->all());
-        return response()->json($music, 200);
+        $music->update($request->validated());
+        return response()->json($music->load('category'));
     }
 
     /**

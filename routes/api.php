@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\MusicController;
 use Illuminate\Http\Request;
@@ -22,4 +23,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 Route::post('/login', [LoginController::class, 'login']);
 Route::apiResource('musics', MusicController::class)->middleware('auth:sanctum');
+Route::apiResource('categories', CategoryController::class)->middleware('auth:sanctum');
 
